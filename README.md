@@ -16,10 +16,14 @@ Procesamiento del archivo Project_Tracker.xlsx para aplicar 5 reglas clave de ge
 Consumo automatizado del dataset auditado usando la librería oficial google-genai para estructurar un informe gerencial en código HTML moderno y estilizado (Informe_Ejecutivo_Gobernanza.html).
 🚀 Cómo Ejecutar este Proyecto
 1. Prerrequisitos
-Instala las librerías necesarias ejecutando en la terminal:
+Instala las librerías necesarias:
+crea un entorno virtual
+activa tu entorno virtual
+En el directorio donde se encuentra el archivo requirements.txt, ejecuta:
 Bash
-pip install pandas openpyxl google-genai
-2. Configuración de Variables de Entorno
+pip install -r requirements.txt
+Este comando instalará todas las dependencias listadas en el archivo dentro de tu entorno venv activado.
+3. Configuración de Variables de Entorno
 Configura tu API Key de Google AI Studio:
 En Windows (CMD):
 DOS
@@ -27,20 +31,20 @@ set GEMINI_API_KEY="tu_api_key_aqui"
 En Linux / macOS:
 Bash
 export GEMINI_API_KEY="tu_api_key_aqui"
-3. Ejecución de Scripts
-a.	Ejecutar el motor de auditoría:
+4. Ejecución de Scripts
+4.1.	Ejecutar el motor de auditoría:
 Bash
 python auditoria_tracker.py
-b.	Generar el informe HTML con IA:
+4.2.	Generar el informe HTML con IA:
 Bash
 python generar_informe_html.py
 📂 Estructura del Repositorio
-Plaintext
-├── Project_Tracker.xlsx
-├── Project_Tracker_Audited.xlsx
+├── data/Project_Tracker.xlsx
+├── data/Project_Tracker_Audited.xlsx
+├── output/Informe_Ejecutivo_Gobernanza.html
 ├── auditoria_tracker.py
 ├── generar_informe_html.py
-├── Informe_Ejecutivo_Gobernanza.html
+├── requirements.txt
 └── README.md
 👤 Autor
 Alcira | Data & Governance Analyst
