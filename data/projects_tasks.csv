@@ -1,8 +1,0 @@
-project,tarea,responsable,fecha_inicio,fecha_fin,estado,porcentaje_avance,prioridad
-Website Redesign,Homepage layout,Ana,2026-01-10,2026-01-20,En progreso,70,Alta
-Website Redesign,Contact form backend,Carlos,2026-01-15,2026-01-25,En progreso,40,Alta
-Marketing Campaign,Email copy,Lucía,2026-01-12,2026-01-18,Completada,100,Media
-Marketing Campaign,Landing page,Pedro,2026-01-14,2026-01-22,En progreso,50,Alta
-Internal Tool,Database schema,María,2026-01-08,2026-01-16,Atrasada,60,Alta
-Internal Tool,API endpoints,Juan,2026-01-10,2026-01-24,En progreso,30,Media
-
