@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <title>Informe Ejecutivo de Gobernanza y Riesgos - Proyecto Transformación Digital</title>
     <style>
         :root {
@@ -456,468 +458,478 @@
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-
-    <!-- HEADER EJECUTIVO -->
-    <header class="header">
-        <div class="header-top">
-            <div class="header-title">
-                <h1>Informe Ejecutivo de Gobernanza, Control de Riesgos y Calidad</h1>
-                <p>Auditoría Integral de PMO y Diagnóstico del Motor de Reglas en Python</p>
-            </div>
-            <div class="meta-pill">
-                <span>Corte de Análisis:</span> 16 de Septiembre, 2026
-            </div>
-        </div>
-        <div class="header-info-grid">
-            <div class="header-info-item">
-                <span>Rol Auditor:</span>
-                <strong>Senior Project Analyst & Governance Consultant</strong>
-            </div>
-            <div class="header-info-item">
-                <span>Proyecto Auditado:</span>
-                <strong>Core System Upgrade & Digital Migration</strong>
-            </div>
-            <div class="header-info-item">
-                <span>Target Go-Live:</span>
-                <strong>20 de Octubre, 2026 (En Riesgo Crítico)</strong>
-            </div>
-            <div class="header-info-item">
-                <span>Alcance Evaluado:</span>
-                <strong>30 Tareas | 5 Minutas de Comité</strong>
-            </div>
-        </div>
-    </header>
-
-    <!-- DASHBOARD DE KPIs -->
-    <section class="kpi-grid">
-        <div class="kpi-card critical">
-            <div class="kpi-title">Salud General del Proyecto</div>
-            <div class="kpi-value"><span class="status-badge-health">CRÍTICO / ROJO</span></div>
-            <div class="kpi-subtext">Riesgo inminente de incumplimiento de Go-Live</div>
-        </div>
-        <div class="kpi-card critical">
-            <div class="kpi-title">Regla 1: Atrasos Activos</div>
-            <div class="kpi-value" style="color: var(--danger-red);">4</div>
-            <div class="kpi-subtext">Tareas en desarrollo con fecha vencida</div>
-        </div>
-        <div class="kpi-card warning">
-            <div class="kpi-title">Regla 2: Desviación Histórica</div>
-            <div class="kpi-value" style="color: var(--warning-amber);">10</div>
-            <div class="kpi-subtext">Tareas finalizadas con sobretiempo</div>
-        </div>
-        <div class="kpi-card critical">
-            <div class="kpi-title">Regla 3: Bloqueo por Dependencias</div>
-            <div class="kpi-value" style="color: var(--danger-red);">12</div>
-            <div class="kpi-subtext">40% del total de tareas bloqueadas en cadena</div>
-        </div>
-        <div class="kpi-card purple">
-            <div class="kpi-title">Regla 4: Integridad de Datos</div>
-            <div class="kpi-value" style="color: var(--purple-dq);">1</div>
-            <div class="kpi-subtext">Inconsistencia detected en Tracker (T014)</div>
-        </div>
-        <div class="kpi-card warning">
-            <div class="kpi-title">Regla 5: Críticas Sin Iniciar</div>
-            <div class="kpi-value" style="color: var(--warning-amber);">8</div>
-            <div class="kpi-subtext">Hitos críticos con 0% de avance</div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN PRINCIPAL DE ANÁLISIS Y HALLAZGOS -->
-    <div class="main-grid">
-        
-        <!-- COLUMNA IZQUIERDA: RESUMEN EJECUTIVO Y REGLAS -->
-        <div>
-            <!-- Resumen Ejecutivo -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Diagnóstico Prescriptivo y Situación Operativa</h2>
-                    <span class="badge badge-red">Atención Inmediata Requerida</span>
-                </div>
-                <p style="font-size: 14px; margin-bottom: 12px; color: var(--text-main);">
-                    Al <strong>16 de septiembre de 2026</strong>, la evaluación de gobernanza revela un <strong>estrangulamiento severo en la Ruta Crítica</strong>. La fase de <em>System Integration Testing (SIT - T016)</em>, que debió haber iniciado según compromisos operativos, se encuentra completamente paralizada debido al incumplimiento simultáneo de tres entregables técnicos fundamentales: a) la integración de pagos por API (T010), b) el ensayo de migración de datos (T012) y c) la finalización del Sprint 2 de desarrollo (T013).
-                </p>
-                <p style="font-size: 14px; color: var(--text-main);">
-                    Este estancamiento ha generado una <strong>reacción en cadena que bloquea 12 tareas subsiguientes (40% de la carga total del proyecto)</strong>, haciendo inviable la fecha comprometida de Go-Live (20-Oct-2026) a menos que se ejecute una intervención de emergencia para redefinir el alcance y comprimir los tiempos de pruebas de seguridad y aceptación.
-                </p>
-            </div>
-
-            <!-- Sección: Visualización del Dashboard en Power BI -->
-            <div class="card">
-                <div style="margin: 0 0; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-
-                    <!-- Encabezado con Título a la Izquierda y Botón de Descarga a la Derecha -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
-                        
-                        <!-- Título de la Sección -->
-                        <h2 style="color: #1e3a8a; margin: 0; font-size: 1.35em;">
-                            📊 Monitoreo y Diagnóstico en Power BI
-                        </h2>
-
-                        <!-- Botón de Descarga del PBIX (Azul Oscuro) -->
-                        <a href="../Project_Governance_Dashboard.pbix" download style="background-color: #1e3a8a; color: #ffffff; text-decoration: none; padding: 7px 14px; border-radius: 6px; font-size: 0.85em; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(15, 23, 42, 0.2); transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'" onmouseout="this.style.backgroundColor='#1e3a8a'">
-                            <span>📥</span> Descargar Dashboard (.pbix)
-                        </a>
-
-                    </div>
-
-                    <p style="color: #475569; font-size: 1em; line-height: 1.6;">
-                        Se construyó un tablero ejecutivo de gobernanza en Power BI conectado a los datos auditados en Python, permitiendo el monitoreo de indicadores clave (KPIs), desviación de tiempos e interacción cruzada de alertas.
+    <div class="container">
+        <!-- HEADER EJECUTIVO -->
+        <header class="header">
+            <div class="header-top">
+                <div class="header-title">
+                    <h1>Informe Ejecutivo de Gobernanza, Control de Riesgos y Calidad</h1>
+                    <p>Auditoría Integral de PMO y Diagnóstico del Motor de Reglas en Python + IA Generativa
                     </p>
+                </div>
+                <div class="meta-pill">
+                    <p>
+                    <span>Corte de Análisis:</span> 16 de Septiembre, 2026
+                    <br>
+                    <span>by: </span> Alcira Bruzual
+                    </p>
+                </div>
+            </div>
+            <div class="header-info-grid">
+                <div class="header-info-item">
+                    <span>Rol Auditor:</span>
+                    <strong>Senior Project Analyst & Governance Consultant</strong>
+                </div>
+                <div class="header-info-item">
+                    <span>Proyecto Auditado:</span>
+                    <strong>Core System Upgrade & Digital Migration</strong>
+                </div>
+                <div class="header-info-item">
+                    <span>Target Go-Live:</span>
+                    <strong>20 de Octubre, 2026 (En Riesgo Crítico)</strong>
+                </div>
+                <div class="header-info-item">
+                    <span>Alcance Evaluado:</span>
+                    <strong>30 Tareas | 5 Minutas de Comité</strong>
+                </div>
+            </div>
+        </header>
 
-                    <!-- Vista General -->
-                    <div style="margin-top: 20px; text-align: center;">
-                        <h3 style="color: #0f172a; text-align: left; font-size: 1.1em;">1. Vista General del Dashboard Ejecutivo</h3>
-                        <img src="../static/img/dashboard_overview.png" alt="Vista General del Dashboard Power BI" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                        <p style="font-size: 0.88em; color: #64748b; margin-top: 6px; font-style: italic;">
-                            Figura 1. Panel principal de control con KPIs de Salud de Proyecto (Crítico), porcentaje de avance y alertas de tareas atrasadas y bloqueadas.
+        <!-- DASHBOARD DE KPIs -->
+        <section class="kpi-grid">
+            <div class="kpi-card critical">
+                <div class="kpi-title">Salud General del Proyecto</div>
+                <div class="kpi-value"><span class="status-badge-health">CRÍTICO / ROJO</span></div>
+                <div class="kpi-subtext">Riesgo inminente de incumplimiento de Go-Live</div>
+            </div>
+            <div class="kpi-card critical">
+                <div class="kpi-title">Regla 1: Atrasos Activos</div>
+                <div class="kpi-value" style="color: var(--danger-red);">4</div>
+                <div class="kpi-subtext">Tareas en desarrollo con fecha vencida</div>
+            </div>
+            <div class="kpi-card warning">
+                <div class="kpi-title">Regla 2: Desviación Histórica</div>
+                <div class="kpi-value" style="color: var(--warning-amber);">10</div>
+                <div class="kpi-subtext">Tareas finalizadas con sobretiempo</div>
+            </div>
+            <div class="kpi-card critical">
+                <div class="kpi-title">Regla 3: Bloqueo por Dependencias</div>
+                <div class="kpi-value" style="color: var(--danger-red);">12</div>
+                <div class="kpi-subtext">40% del total de tareas bloqueadas en cadena</div>
+            </div>
+            <div class="kpi-card purple">
+                <div class="kpi-title">Regla 4: Integridad de Datos</div>
+                <div class="kpi-value" style="color: var(--purple-dq);">1</div>
+                <div class="kpi-subtext">Inconsistencia detectada en Tracker (T014)</div>
+            </div>
+            <div class="kpi-card warning">
+                <div class="kpi-title">Regla 5: Críticas Sin Iniciar</div>
+                <div class="kpi-value" style="color: var(--warning-amber);">8</div>
+                <div class="kpi-subtext">Hitos críticos con 0% de avance</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRINCIPAL DE ANÁLISIS Y HALLAZGOS -->
+        <div class="main-grid">
+            
+            <!-- COLUMNA IZQUIERDA: RESUMEN EJECUTIVO Y REGLAS -->
+            <div>
+                <!-- Resumen Ejecutivo y Diagnóstico -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Resumen Ejecutivo y Situación Operativa</h2>
+                        <span class="badge badge-red">Atención Inmediata Requerida</span>
+                    </div>
+                    <p style="font-size: 14px; margin-bottom: 14px; color: var(--text-main); line-height: 1.6;">
+                        Al corte del <strong>16 de septiembre de 2026</strong>, la evaluación integral de gobernanza sobre el proyecto <em>Core System Upgrade & Digital Migration</em> revela una <strong>desviación crítica en la ruta principal</strong>, comprometiendo la fecha meta de salida a producción (<em>Target Go-Live: 20-Oct-2026</em>). Si bien el avance general registrado es del 68%, la concentración de retrasos en la fase de pruebas (SIT) genera un efecto cascada sobre el 40% del portafolio de tareas. Se requiere la intervención del Comité Ejecutivo para la reasignación prioritaria de recursos y el destrabe de dependencias técnicas clave.
+                    </p>
+                    
+                    <div style="background-color: var(--danger-light); border-left: 4px solid var(--danger-red); padding: 12px 16px; border-radius: 4px; margin-top: 12px;">
+                        <strong style="color: #7f1d1d; font-size: 13px; display: block; margin-bottom: 6px;">Efecto Cascada y Calidad de Datos:</strong>
+                        <ul style="font-size: 13px; color: #7f1d1d; margin-left: 18px; line-height: 1.5;">
+                            <li><strong>Cuello de Botella Operativo:</strong> La fase de <em>System Integration Testing (SIT)</em> está paralizada por la convergencia no resuelta de tres entregables: integración de pagos (T010), ensayo de migración (T012) y Sprint 2 (T013).</li>
+                            <li><strong>Inconsistencia Transaccional:</strong> La auditoría algorítmica capturó transacciones activas (In Progress) con fecha de finalización asignada (ej. T014), lo que distorsiona los reportes de avance tradicionales.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección: Visualización del Dashboard en Power BI -->
+                <div class="card">
+                    <div style="margin: 0 0; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+
+                        <!-- Encabezado con Título a la Izquierda y Botón de Descarga a la Derecha -->
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+                            
+                            <!-- Título de la Sección -->
+                            <h2 style="color: #1e3a8a; margin: 0; font-size: 1.35em;">
+                                📊 Monitoreo y Diagnóstico en Power BI
+                            </h2>
+
+                            <!-- Botón de Descarga del PBIX (Azul Oscuro) -->
+                            <a href="../Project_Governance_Dashboard.pbix" download style="background-color: #1e3a8a; color: #ffffff; text-decoration: none; padding: 7px 14px; border-radius: 6px; font-size: 0.85em; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(15, 23, 42, 0.2); transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'" onmouseout="this.style.backgroundColor='#1e3a8a'">
+                                <span>📥</span> Descargar Dashboard (.pbix)
+                            </a>
+
+                        </div>
+
+                        <p style="color: #475569; font-size: 1em; line-height: 1.6;">
+                            Se construyó un tablero ejecutivo de gobernanza en Power BI conectado a los datos auditados en Python, permitiendo el monitoreo de indicadores clave (KPIs), desviación de tiempos e interacción cruzada de alertas.
                         </p>
+
+                        <!-- Vista General -->
+                        <div style="margin-top: 20px; text-align: center;">
+                            <h3 style="color: #0f172a; text-align: left; font-size: 1.1em;">1. Vista General del Dashboard Ejecutivo</h3>
+                            <img src="../images/dashboard_overview.png" alt="Vista General del Dashboard Power BI" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                            <p style="font-size: 0.88em; color: #64748b; margin-top: 6px; font-style: italic;">
+                                Figura 1. Panel principal de control con KPIs de Salud de Proyecto (Crítico), porcentaje de avance y alertas de tareas atrasadas y bloqueadas.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
+
+            <!-- COLUMNA DERECHA: CRONOGRAMA, PROVEEDORES Y ACCIONES -->
+            <div>
+                <!-- Alineación Minutas vs Realidad -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Matriz de Hallazgos en Comité</h2>
+                    </div>
+                    <div style="font-size: 13px;">
+                        <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
+                            <strong style="color: var(--accent-blue);">28-Ago | Comités de Proyecto:</strong>
+                            <p style="color: var(--text-light);">Se identificó inestabilidad en API de pagos. Decisión: priorizar remediación. <em>Resultado actual: Inoperativo (75%).</em></p>
+                        </div>
+                        <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
+                            <strong style="color: var(--accent-blue);">04-Sep | Revisión de Datos:</strong>
+                            <p style="color: var(--text-light);">18% de registros heredados fallaron las reglas de validación. Decisión: ciclo extra de remediación. <em>Resultado actual: T012 retrasado.</em></p>
+                        </div>
+                        <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
+                            <strong style="color: var(--accent-blue);">10-Sep | Coordinación de Seguridad:</strong>
+                            <p style="color: var(--text-light);">Proveedor de PenTest no ha confirmado fecha. <em>Riesgo: Bloqueo de pruebas.</em></p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--accent-blue);">11-Sep | Alerta de Control:</strong>
+                            <p style="color: var(--text-light);">SIT estaba programado para el 14-Sep. <em>Impacto real al 16-Sep: Bloqueado totalmente.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan de Acción Inmediato y prescriptivo -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Plan de Recuperación de Emergencia Sugerido</h2>
+                    </div>
+                    <ul class="roadmap-list">
+                        <li class="roadmap-item urgent">
+                            <div class="roadmap-title">1. Destrabe Prioritario de Proveedores (API Pagos)</div>
+                            <div class="roadmap-desc">Habilitar horas de soporte técnico especializado para resolver las inconsistencias del módulo T010 en un máximo de 48 hrs.</div>
+                            <div class="roadmap-desc"><span class="owner-tag">Owner: Diego Tech / Ana PM</span></div>
+                        </li>
+                        <li class="roadmap-item urgent">
+                            <div class="roadmap-title">2. Saneamiento y Flexibilización en Migración</div>
+                            <div class="roadmap-desc">Aplicar reglas temporales de validación en datos no críticos para destrabar el ensayo T012 y habilitar la fase SIT.</div>
+                            <div class="roadmap-desc"><span class="owner-tag">Owner: Carlos Data / Luis BA</span></div>
+                        </li>
+                        <li class="roadmap-item">
+                            <div class="roadmap-title">3. Confirmación de Ventana PenTest (T029)</div>
+                            <div class="roadmap-desc">Fijar ventana inamovible de pruebas de penetración con el proveedor de seguridad entre el 21 y 28 de septiembre.</div>
+                            <div class="roadmap-desc"><span class="owner-tag">Owner: Sara Security</span></div>
+                        </li>
+                        <li class="roadmap-item">
+                            <div class="roadmap-title">4. Saneamiento de Base de Datos en Tracker</div>
+                            <div class="roadmap-desc">Corrección de incoherencias (ej. T014) y alineación de los registros con el motor de auditoría automatizado.</div>
+                            <div class="roadmap-desc"><span class="owner-tag">Owner: Ana PM</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Ancho Completo: Desglose Prescriptivo por Reglas del Motor Python -->
+        <div style="width: 100%; max-width: 100%; box-sizing: border-box; margin: -20px 0 24px 0; background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
             
+            <!-- Encabezado de la Sección -->
+            <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px;">
+                <h2 style="color: #1e3a8a; margin: 0; font-size: 1.4em;">
+                    Desglose Técnico de Alertas Detectadas por el Motor de Reglas en Python
+                </h2>
+            </div>
+
+            <!-- Contenedor Grid (2 a la izquierda y 2 a la derecha) -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%;">
+                
+                <!-- Fila 1 - Izquierda: Regla 1 -->
+                <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
+                    <div class="alert-box-title">
+                        <span>Regla 1: Atraso Activo en Tareas Críticas de Desarrollo y Datos (4 Tareas)</span>
+                        <span class="badge badge-red">Severidad Alta</span>
+                    </div>
+                    <p>Tareas en curso con fecha planificada de fin superada respecto al corte (16-Sep):</p>
+                    <ul>
+                        <li><strong>T010 - API integration (payments):</strong> Plan: 04-Sep | Progreso: 75% | Resp: Diego Tech. Bloquea el flujo financiero central.</li>
+                        <li><strong>T012 - Data migration rehearsal:</strong> Plan: 09-Sep | Progreso: 60% | Resp: Carlos Data. Bloqueado por 18% de fallas de validación.</li>
+                        <li><strong>T013 - Development sprint 2:</strong> Plan: 15-Sep | Progreso: 45% | Resp: Diego Tech. Retraso estructural en componentes base.</li>
+                        <li><strong>T014 - Accessibility fixes:</strong> Plan: 11-Sep | Progreso: 80% | Resp: Marta UX. Presenta inconsistencia en datos (ver Regla 4).</li>
+                    </ul>
+                </div>
+
+                <!-- Fila 1 - Derecha: Regla 3 -->
+                <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
+                    <div class="alert-box-title">
+                        <span>Regla 3: Bloqueo Masivo por Dependencias Cruzadas (12 Tareas)</span>
+                        <span class="badge badge-red">Efecto Cascada</span>
+                    </div>
+                    <p>El retraso en T010, T012 y T013 congela el avance de la fase de pruebas y despliegue:</p>
+                    <ul>
+                        <li><strong>Ruta Crítica Retenida:</strong> T016 (SIT), T017 (UAT), T018 (Defect triage), T019 (Checklist producción), T020 (Go-live rehearsal), T021 (Deployment).</li>
+                        <li><strong>Actividades Paralelas Paralizadas:</strong> T029 (Security penetration test - sin proveedor confirmado) y T030 (Training & enablement).</li>
+                    </ul>
+                </div>
+
+                <!-- Fila 2 - Izquierda: Regla 4 -->
+                <div class="alert-box purple" style="margin: 0; width: 100%; box-sizing: border-box;">
+                    <div class="alert-box-title">
+                        <span>Regla 4: Inconsistencia y Calidad de Datos en Tracker (1 Tarea)</span>
+                        <span class="badge badge-purple">Inconsistencia de Información</span>
+                    </div>
+                    <p><strong>Tarea T014 (Accessibility fixes):</strong> El registro muestra un estado de <code>"In Progress"</code> con un <code>% = 80%</code>, pero contiene una fecha de finalización <code>"Actual End" = 2026-09-14</code>. Esto requiere de validación de datos en la herramienta de seguimiento, ya que distorsiona los algoritmos de estimación.</p>
+                </div>
+
+                <!-- Fila 2 - Derecha: Reglas 2 & 5 -->
+                <div class="alert-box warning" style="margin: 0; width: 100%; box-sizing: border-box;">
+                    <div class="alert-box-title">
+                        <span>Reglas 2 y 5: Desviaciones Históricas (10) e Hitos Críticos Sin Iniciar (8)</span>
+                        <span class="badge badge-orange">Riesgo Subyacente</span>
+                    </div>
+                    <p>Se evidencia un patrón sistemático de subestimación de tiempos desde el inicio del proyecto (10 tareas completadas/en curso superaron su plazo original). Asimismo, 8 tareas críticas de preparación para producción permanecen en 0% a solo 30 días de la fecha meta.</p>
+                </div>
+
+            </div>
         </div>
 
-        <!-- COLUMNA DERECHA: CRONOGRAMA, PROVEEDORES Y ACCIONES -->
-        <div>
-            <!-- Alineación Minutas vs Realidad -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Matriz de Hallazgos en Comité</h2>
+        <!-- SECCIÓN DE RECOMENDACIONES METODOLÓGICAS (DIFERENCIADAS) -->
+        <section class="card">
+            <div class="card-header">
+                <h2 class="card-title">Gobernanza Metodológica y Análisis Diferenciado</h2>
+                <span class="badge badge-gray">Marco de Gobernanza PMO</span>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-main); margin-bottom: 18px; line-height: 1.6;">
+                Con el objetivo de garantizar máxima objetividad y transparencia en la presentación de resultados ante el Comité Ejecutivo, a continuación se presenta la <strong>separación formal entre los hechos comprobados mediante la auditoría de datos</strong> (evidencia factual extraída por los algoritmos en Python) y las <strong>inferencias gerenciales derivadas por la consultoría + IA</strong> para la toma de decisiones estratégicas:
+            </p>
+
+            <div class="rec-container">
+                <!-- HECHOS OBSERVADOS -->
+                <div class="rec-box facts">
+                    <div class="rec-box-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Hechos Observados (Datos Auditados)
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">1. Incumplimiento Fechas Planeadas en Trabajo Activo</div>
+                        <div style="color: #0369a1;">Las tareas T010, T012 y T013 han sobrepasado sus fechas límite (04-Sep, 09-Sep y 15-Sep) registrando avances del 75%, 60% y 45% respectivamente. La tarea T016 (SIT) no pudo iniciar en la fecha prevista del 14 de Septiembre.</div>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">2. Incoherencia Transaccional en Sistema de Control</div>
+                        <div style="color: #0369a1;">La tarea T014 posee una fecha de término real (Actual End = 2026-09-14) estando marcada con estado "In Progress" y progreso incompleto (80%).</div>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">3. Alta Tasa de Dependencias Interrumpidas</div>
+                        <div style="color: #0369a1;">Un bloque de 12 tareas consecutivas en estado "Not Started" presenta bandera activa de bloqueo por falta de insumos de entrada técnicos.</div>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">4. Falta de Confirmación de Terceros</div>
+                        <div style="color: #0369a1;">La minuta del 10-Sep confirma que el proveedor externo de seguridad para T029 no ha agendado la ventana de ejecución del Penetration Test.</div>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">5. Análisis de Capacidad de Recursos (Diego Tech)</div>
+                        <div style="color: #0369a1;">Diego Tech concentra la mayor "carga técnica" del proyecto (T007, T009, T010, T013, T018, T020, T021), pudiendo afectar la disponibilidad de recursos para otras tareas críticas.</div>
+                    </div>
                 </div>
-                <div style="font-size: 13px;">
-                    <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
-                        <strong style="color: var(--accent-blue);">28-Ago | Comités de Proyecto:</strong>
-                        <p style="color: var(--text-light);">Se identificó inestabilidad en API de pagos. Decisión: priorizar remediación. <em>Resultado actual: Inoperativo (75%).</em></p>
+
+                <!-- INFERENCIAS GERENCIALES -->
+                <div class="rec-box inferences">
+                    <div class="rec-box-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                        Inferencias Gerenciales (Evaluación de Riesgo)
                     </div>
-                    <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
-                        <strong style="color: var(--accent-blue);">04-Sep | Revisión de Datos:</strong>
-                        <p style="color: var(--text-light);">18% de registros heredados fallaron las reglas de validación. Decisión: ciclo extra de remediación. <em>Resultado actual: T012 retrasado.</em></p>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">1. Inviabilidad del Hito Go-Live en la Fecha Target</div>
+                        <div style="color: #701a75;">La compresión del calendario hace técnicamente imposible completar SIT (10 días), UAT (10 días), PenTest y Rehearsal antes del 20 de Octubre. Se infiere un retraso de salida a producción de al menos 2 a 3 semanas (Noviembre 2026).</div>
                     </div>
-                    <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color);">
-                        <strong style="color: var(--accent-blue);">10-Sep | Coordinación de Seguridad:</strong>
-                        <p style="color: var(--text-light);">Proveedor de PenTest no ha confirmado fecha. <em>Riesgo: Bloqueo de pruebas.</em></p>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">2. Calidad en Reportabilidad</div>
+                        <div style="color: #701a75;">Del hallazgo en T014 se infiere que responde a una práctica de actualización manual y sin validación antes de comités. Se sugiere apliar un proceso automático de validación de datos previo al corte y la presentación de informes.</div>
                     </div>
-                    <div>
-                        <strong style="color: var(--accent-blue);">11-Sep | Alerta de Control:</strong>
-                        <p style="color: var(--text-light);">SIT estaba programado para el 14-Sep. <em>Impacto real al 16-Sep: Bloqueado totalmente.</em></p>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">3. Subestimación Sistémica en Estimación Técnica</div>
+                        <div style="color: #701a75;">Con 10 tareas presentando desviaciones históricas, la metodología de estimación del equipo técnico carece de margen de contingencia (buffer), trasladando los sobretiempos directamente a las fases finales de pruebas.</div>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-title">4. Riesgo Operational Severo en Despliegue</div>
+                        <div style="color: #701a75;">Si se fuerza el cumplimiento de la fecha de Go-Live sin diferir alcance, la inferencia directa es que se recortarán los tiempos de UAT y Pruebas de Penetración, exponiendo a la compañía a fallas críticas en producción y vulnerabilidades de ciberseguridad.</div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Plan de Acción Inmediato -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Plan de Recuperación de Emergencia Sugerido</h2>
-                </div>
-                <ul class="roadmap-list">
-                    <li class="roadmap-item urgent">
-                        <div class="roadmap-title">Escalamiento e Intervención de Proveedor API</div>
-                        <div class="roadmap-desc">Involucrar liderazgo ejecutivo del proveedor financiero. Target: Unblock T010 en 48 hrs.</div>
-                        <div class="roadmap-desc"><span class="owner-tag">Owner: Diego Tech / Ana PM</span></div>
-                    </li>
-                    <li class="roadmap-item urgent">
-                        <div class="roadmap-title">Saneamiento y Cierre de T012 y T028</div>
-                        <div class="roadmap-desc">Aplicar reglas de validación relajadas/temporales para datos no críticos para destrabar ensayo de migración.</div>
-                        <div class="roadmap-desc"><span class="owner-tag">Owner: Carlos Data / Luis BA</span></div>
-                    </li>
-                    <li class="roadmap-item">
-                        <div class="roadmap-title">Confirmación Vendedor PenTest (T029)</div>
-                        <div class="roadmap-desc">Fijar ventana inamovible de pruebas de penetración entre Sep 21-28.</div>
-                        <div class="roadmap-desc"><span class="owner-tag">Owner: Sara Security</span></div>
-                    </li>
-                    <li class="roadmap-item">
-                        <div class="roadmap-title">Saneamiento de Datos del Tracker</div>
-                        <div class="roadmap-desc">Corregir incongruencia en T014 y auditar registros de estado en la herramienta.</div>
-                        <div class="roadmap-desc"><span class="owner-tag">Owner: Ana PM</span></div>
-                    </li>
-                </ul>
+        <!-- DETALLE DE TAREAS AUDITADAS EN TABLA -->
+        <section class="card">
+            <div class="card-header">
+                <h2 class="card-title">Auditoría de Registro de Tareas del Tracker</h2>
+                <span class="badge badge-gray">Muestra de Tareas Críticas y Modificadas</span>
             </div>
-        </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task ID</th>
+                            <th>Descripción de la Tarea</th>
+                            <th>Owner</th>
+                            <th>Estado</th>
+                            <th>Progreso</th>
+                            <th>Plan End</th>
+                            <th>Actual End</th>
+                            <th>Alertas Detectadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- T010 -->
+                        <tr>
+                            <td><strong>T010</strong></td>
+                            <td>API integration - payments</td>
+                            <td>Diego Tech</td>
+                            <td><span class="badge badge-orange">In Progress</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 75%;"></div></div>
+                                75%
+                            </td>
+                            <td>2026-09-04</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R1: Atraso Activo</span> <span class="badge badge-orange">R2: Desviación</span></td>
+                        </tr>
+                        <!-- T012 -->
+                        <tr>
+                            <td><strong>T012</strong></td>
+                            <td>Data migration rehearsal</td>
+                            <td>Carlos Data</td>
+                            <td><span class="badge badge-orange">In Progress</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 60%;"></div></div>
+                                60%
+                            </td>
+                            <td>2026-09-09</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R1: Atraso Activo</span></td>
+                        </tr>
+                        <!-- T013 -->
+                        <tr>
+                            <td><strong>T013</strong></td>
+                            <td>Development sprint 2</td>
+                            <td>Diego Tech</td>
+                            <td><span class="badge badge-orange">In Progress</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 45%;"></div></div>
+                                45%
+                            </td>
+                            <td>2026-09-15</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R1: Atraso Activo</span></td>
+                        </tr>
+                        <!-- T014 -->
+                        <tr style="background-color: #faf5ff;">
+                            <td><strong>T014</strong></td>
+                            <td>Accessibility fixes</td>
+                            <td>Marta UX</td>
+                            <td><span class="badge badge-orange">In Progress</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 80%;"></div></div>
+                                80%
+                            </td>
+                            <td>2026-09-11</td>
+                            <td>2026-09-14</td>
+                            <td><span class="badge badge-red">R1: Atraso</span> <span class="badge badge-purple">R4: Error Datos</span></td>
+                        </tr>
+                        <!-- T016 -->
+                        <tr>
+                            <td><strong>T016</strong></td>
+                            <td>System integration testing (SIT)</td>
+                            <td>Luis BA</td>
+                            <td><span class="badge badge-gray">Not Started</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
+                                0%
+                            </td>
+                            <td>2026-09-25</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
+                        </tr>
+                        <!-- T017 -->
+                        <tr>
+                            <td><strong>T017</strong></td>
+                            <td>User acceptance testing (UAT)</td>
+                            <td>Business Team</td>
+                            <td><span class="badge badge-gray">Not Started</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
+                                0%
+                            </td>
+                            <td>2026-10-06</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
+                        </tr>
+                        <!-- T028 -->
+                        <tr>
+                            <td><strong>T028</strong></td>
+                            <td>Legacy data remediation</td>
+                            <td>Carlos Data</td>
+                            <td><span class="badge badge-orange">In Progress</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 40%;"></div></div>
+                                40%
+                            </td>
+                            <td>2026-09-16</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-orange">R2: Vence Hoy</span></td>
+                        </tr>
+                        <!-- T029 -->
+                        <tr>
+                            <td><strong>T029</strong></td>
+                            <td>Security penetration test</td>
+                            <td>Sara Security</td>
+                            <td><span class="badge badge-gray">Not Started</span></td>
+                            <td>
+                                <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
+                                0%
+                            </td>
+                            <td>2026-09-23</td>
+                            <td>NaT</td>
+                            <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>Informe Ejecutivo generado por el Motor de Gobernanza & Audito PMO | Fecha de Corte: 16 de Septiembre de 2026</p>
+            <p>Documento para uso exclusivo del Comité Directivo y Patrocinadores del Proyecto.</p>
+        </footer>
+
     </div>
-
-    <!-- Sección Ancho Completo: Desglose Prescriptivo por Reglas del Motor Python -->
-    <div style="width: 100%; max-width: 100%; box-sizing: border-box; margin: -20px 0 24px 0; background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-        
-        <!-- Encabezado de la Sección -->
-        <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px;">
-            <h2 style="color: #1e3a8a; margin: 0; font-size: 1.4em;">
-                Desglose Técnico de Alertas Detectadas por el Motor de Reglas
-            </h2>
-        </div>
-
-        <!-- Contenedor Grid (2 a la izquierda y 2 a la derecha) -->
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%;">
-            
-            <!-- Fila 1 - Izquierda: Regla 1 -->
-            <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
-                <div class="alert-box-title">
-                    <span>Regla 1: Atraso Activo en Tareas Críticas de Desarrollo y Datos (4 Tareas)</span>
-                    <span class="badge badge-red">Severidad Alta</span>
-                </div>
-                <p>Tareas en curso con fecha planificada de fin superada respecto al corte (16-Sep):</p>
-                <ul>
-                    <li><strong>T010 - API integration (payments):</strong> Plan: 04-Sep | Progreso: 75% | Resp: Diego Tech. Bloquea el flujo financiero central.</li>
-                    <li><strong>T012 - Data migration rehearsal:</strong> Plan: 09-Sep | Progreso: 60% | Resp: Carlos Data. Bloqueado por 18% de fallas de validación.</li>
-                    <li><strong>T013 - Development sprint 2:</strong> Plan: 15-Sep | Progreso: 45% | Resp: Diego Tech. Retraso estructural en componentes base.</li>
-                    <li><strong>T014 - Accessibility fixes:</strong> Plan: 11-Sep | Progreso: 80% | Resp: Marta UX. Presenta inconsistencia en datos (ver Regla 4).</li>
-                </ul>
-            </div>
-
-            <!-- Fila 1 - Derecha: Regla 3 -->
-            <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
-                <div class="alert-box-title">
-                    <span>Regla 3: Bloqueo Masivo por Dependencias Cruzadas (12 Tareas)</span>
-                    <span class="badge badge-red">Efecto Cascada</span>
-                </div>
-                <p>El retraso en T010, T012 y T013 congela el avance de la fase de pruebas y despliegue:</p>
-                <ul>
-                    <li><strong>Ruta Crítica Retenida:</strong> T016 (SIT), T017 (UAT), T018 (Defect triage), T019 (Checklist producción), T020 (Go-live rehearsal), T021 (Deployment).</li>
-                    <li><strong>Actividades Paralelas Paralizadas:</strong> T029 (Security penetration test - sin proveedor confirmado) y T030 (Training & enablement).</li>
-                </ul>
-            </div>
-
-            <!-- Fila 2 - Izquierda: Regla 4 -->
-            <div class="alert-box purple" style="margin: 0; width: 100%; box-sizing: border-box;">
-                <div class="alert-box-title">
-                    <span>Regla 4: Inconsistencia y Calidad de Datos en Tracker (1 Tarea)</span>
-                    <span class="badge badge-purple">Inconsistencia de Información</span>
-                </div>
-                <p><strong>Tarea T014 (Accessibility fixes):</strong> El registro muestra un estado de <code>"In Progress"</code> con un <code>% = 80%</code>, pero contiene una fecha de finalización <code>"Actual End" = 2026-09-14</code>. Esto requiere de validación de datos en la herramienta de seguimiento, ya que distorsiona los algoritmos de estimación.</p>
-            </div>
-
-            <!-- Fila 2 - Derecha: Reglas 2 & 5 -->
-            <div class="alert-box warning" style="margin: 0; width: 100%; box-sizing: border-box;">
-                <div class="alert-box-title">
-                    <span>Reglas 2 y 5: Desviaciones Históricas (10) e Hitos Críticos Sin Iniciar (8)</span>
-                    <span class="badge badge-orange">Riesgo Subyacente</span>
-                </div>
-                <p>Se evidencia un patrón sistemático de subestimación de tiempos desde el inicio del proyecto (10 tareas completadas/en curso superaron su plazo original). Asimismo, 8 tareas críticas de preparación para producción permanecen en 0% a solo 30 días de la fecha meta.</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- SECCIÓN DE RECOMENDACIONES METODOLÓGICAS (DIFERENCIADAS) -->
-    <section class="card">
-        <div class="card-header">
-            <h2 class="card-title">Recomendaciones Estratégicas y Análisis Metodológico</h2>
-            <span class="badge badge-gray">Marco de Gobernanza PMO</span>
-        </div>
-        <p style="font-size: 13px; color: var(--text-light); margin-bottom: 16px;">
-            A continuación se presenta la separación formal entre los hechos empíricamente comprobados mediante la auditoría de datos y las inferencias gerenciales derivadas por la consultoría para la toma de decisiones del Comité Ejecutivo:
-        </p>
-
-        <div class="rec-container">
-            <!-- HECHOS OBSERVADOS -->
-            <div class="rec-box facts">
-                <div class="rec-box-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                    Hechos Observados (Datos Auditados)
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">1. Incumplimiento Fechas Planeadas en Trabajo Activo</div>
-                    <div style="color: #0369a1;">Las tareas T010, T012 y T013 han sobrepasado sus fechas límite (04-Sep, 09-Sep y 15-Sep) registrando avances del 75%, 60% y 45% respectivamente. La tarea T016 (SIT) no pudo iniciar en la fecha prevista del 14 de Septiembre.</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">2. Incoherencia Transaccional en Sistema de Control</div>
-                    <div style="color: #0369a1;">La tarea T014 posee una fecha de término real (Actual End = 2026-09-14) estando marcada con estado "In Progress" y progreso incompleto (80%).</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">3. Alta Tasa de Dependencias Interrumpidas</div>
-                    <div style="color: #0369a1;">Un bloque de 12 tareas consecutivas en estado "Not Started" presenta bandera activa de bloqueo por falta de insumos de entrada técnicos.</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">4. Falta de Confirmación de Terceros</div>
-                    <div style="color: #0369a1;">La minuta del 10-Sep confirma que el proveedor externo de seguridad para T029 no ha agendado la ventana de ejecución del Penetration Test.</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">5. Análisis de Capacidad de Recursos (Diego Tech)</div>
-                    <div style="color: #0369a1;">Diego Tech concentra la mayor carga técnica del proyecto (T007, T009, T010, T013, T018, T020, T021), pudiendo afectar la disponibilidad de recursos para otras tareas críticas.</div>
-                </div>
-            </div>
-
-            <!-- INFERENCIAS GERENCIALES -->
-            <div class="rec-box inferences">
-                <div class="rec-box-header">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-                    Inferencias Gerenciales (Evaluación de Riesgo)
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">1. Inviabilidad del Hito Go-Live en la Fecha Target</div>
-                    <div style="color: #701a75;">La compresión del calendario hace técnicamente imposible completar SIT (10 días), UAT (10 días), PenTest y Rehearsal antes del 20 de Octubre. Se infiere un retraso de salida a producción de al menos 2 a 3 semanas (Noviembre 2026).</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">2. Calidad en Reportabilidad</div>
-                    <div style="color: #701a75;">Del hallazgo en T014 se infiere que responde a una práctica de actualización manual y sin validación antes de comités. Se sugiere apliar un proceso automático de validación de datos previo al corte y la presentación de informes.</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">3. Subestimación Sistémica en Estimación Técnica</div>
-                    <div style="color: #701a75;">Con 10 tareas presentando desviaciones históricas, la metodología de estimación del equipo técnico carece de margen de contingencia (buffer), trasladando los sobretiempos directamente a las fases finales de pruebas.</div>
-                </div>
-
-                <div class="rec-item">
-                    <div class="rec-item-title">4. Riesgo Operational Severo en Despliegue</div>
-                    <div style="color: #701a75;">Si se fuerza el cumplimiento de la fecha de Go-Live sin diferir alcance, la inferencia directa es que se recortarán los tiempos de UAT y Pruebas de Penetración, exponiendo a la compañía a fallas críticas en producción y vulnerabilidades de ciberseguridad.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DETALLE DE TAREAS AUDITADAS EN TABLA -->
-    <section class="card">
-        <div class="card-header">
-            <h2 class="card-title">Auditoría de Registro de Tareas del Tracker</h2>
-            <span class="badge badge-gray">Muestra de Tareas Críticas y Modificadas</span>
-        </div>
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Task ID</th>
-                        <th>Descripción de la Tarea</th>
-                        <th>Owner</th>
-                        <th>Estado</th>
-                        <th>Progreso</th>
-                        <th>Plan End</th>
-                        <th>Actual End</th>
-                        <th>Alertas Detectadas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- T010 -->
-                    <tr>
-                        <td><strong>T010</strong></td>
-                        <td>API integration - payments</td>
-                        <td>Diego Tech</td>
-                        <td><span class="badge badge-orange">In Progress</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 75%;"></div></div>
-                            75%
-                        </td>
-                        <td>2026-09-04</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R1: Atraso Activo</span> <span class="badge badge-orange">R2: Desviación</span></td>
-                    </tr>
-                    <!-- T012 -->
-                    <tr>
-                        <td><strong>T012</strong></td>
-                        <td>Data migration rehearsal</td>
-                        <td>Carlos Data</td>
-                        <td><span class="badge badge-orange">In Progress</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 60%;"></div></div>
-                            60%
-                        </td>
-                        <td>2026-09-09</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R1: Atraso Activo</span></td>
-                    </tr>
-                    <!-- T013 -->
-                    <tr>
-                        <td><strong>T013</strong></td>
-                        <td>Development sprint 2</td>
-                        <td>Diego Tech</td>
-                        <td><span class="badge badge-orange">In Progress</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 45%;"></div></div>
-                            45%
-                        </td>
-                        <td>2026-09-15</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R1: Atraso Activo</span></td>
-                    </tr>
-                    <!-- T014 -->
-                    <tr style="background-color: #faf5ff;">
-                        <td><strong>T014</strong></td>
-                        <td>Accessibility fixes</td>
-                        <td>Marta UX</td>
-                        <td><span class="badge badge-orange">In Progress</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 80%;"></div></div>
-                            80%
-                        </td>
-                        <td>2026-09-11</td>
-                        <td>2026-09-14</td>
-                        <td><span class="badge badge-red">R1: Atraso</span> <span class="badge badge-purple">R4: Error Datos</span></td>
-                    </tr>
-                    <!-- T016 -->
-                    <tr>
-                        <td><strong>T016</strong></td>
-                        <td>System integration testing (SIT)</td>
-                        <td>Luis BA</td>
-                        <td><span class="badge badge-gray">Not Started</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
-                            0%
-                        </td>
-                        <td>2026-09-25</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
-                    </tr>
-                    <!-- T017 -->
-                    <tr>
-                        <td><strong>T017</strong></td>
-                        <td>User acceptance testing (UAT)</td>
-                        <td>Business Team</td>
-                        <td><span class="badge badge-gray">Not Started</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
-                            0%
-                        </td>
-                        <td>2026-10-06</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
-                    </tr>
-                    <!-- T028 -->
-                    <tr>
-                        <td><strong>T028</strong></td>
-                        <td>Legacy data remediation</td>
-                        <td>Carlos Data</td>
-                        <td><span class="badge badge-orange">In Progress</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-amber" style="width: 40%;"></div></div>
-                            40%
-                        </td>
-                        <td>2026-09-16</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-orange">R2: Vence Hoy</span></td>
-                    </tr>
-                    <!-- T029 -->
-                    <tr>
-                        <td><strong>T029</strong></td>
-                        <td>Security penetration test</td>
-                        <td>Sara Security</td>
-                        <td><span class="badge badge-gray">Not Started</span></td>
-                        <td>
-                            <div class="progress-bar-container"><div class="progress-bar-fill fill-red" style="width: 0%;"></div></div>
-                            0%
-                        </td>
-                        <td>2026-09-23</td>
-                        <td>NaT</td>
-                        <td><span class="badge badge-red">R3: Bloqueada</span> <span class="badge badge-orange">R5: Sin Iniciar</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <footer>
-        <p>Informe Ejecutivo generado por el Motor de Gobernanza & Audito PMO | Fecha de Corte: 16 de Septiembre de 2026</p>
-        <p>Documento para uso exclusivo del Comité Directivo y Patrocinadores del Proyecto.</p>
-    </footer>
-
-</div>
 
 </body>
 </html>
