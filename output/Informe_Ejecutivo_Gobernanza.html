@@ -650,23 +650,20 @@
             </div>
         </div>
 
-        <!-- Sección Ancho Completo: Desglose Prescriptivo por Reglas del Motor Python -->
+        <!-- DESGLOSE TÉCNICO DE ALERTAS DETECTADAS POR EL MOTOR DE REGLAS PYTHON -->
         <section class="card">
-            
-            <!-- Encabezado de la Sección -->
-            <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px;">
-                <h2 style="color: #1e3a8a; margin: 0; font-size: 1.4em;">
-                    Desglose Técnico de Alertas Detectadas por el Motor de Reglas en Python
-                </h2>
+            <div class="card-header">
+                <h2 class="card-title">Desglose Técnico de Alertas Detectadas por el Motor de Reglas en Python</h2>
+                <span class="badge badge-gray">Diagnóstico Automático</span>
             </div>
 
-            <!-- Contenedor Grid (2 a la izquierda y 2 a la derecha) -->
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%;">
+            <!-- Contenedor Grid Responsivo (2 columnas en PC / 1 columna en Móvil) -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; width: 100%; box-sizing: border-box;">
                 
                 <!-- Fila 1 - Izquierda: Regla 1 -->
-                <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
+                <div class="alert-box danger">
                     <div class="alert-box-title">
-                        <span>Regla 1: Atraso Activo en Tareas Críticas de Desarrollo y Datos (4 Tareas)</span>
+                        <span>Regla 1: Atraso Activo en Tareas Críticas</span>
                         <span class="badge badge-red">Severidad Alta</span>
                     </div>
                     <p>Tareas en curso con fecha planificada de fin superada respecto al corte (16-Sep):</p>
@@ -679,31 +676,31 @@
                 </div>
 
                 <!-- Fila 1 - Derecha: Regla 3 -->
-                <div class="alert-box danger" style="margin: 0; width: 100%; box-sizing: border-box;">
+                <div class="alert-box danger">
                     <div class="alert-box-title">
-                        <span>Regla 3: Bloqueo Masivo por Dependencias Cruzadas (12 Tareas)</span>
+                        <span>Regla 3: Bloqueo Masivo por Dependencias</span>
                         <span class="badge badge-red">Efecto Cascada</span>
                     </div>
                     <p>El retraso en T010, T012 y T013 congela el avance de la fase de pruebas y despliegue:</p>
                     <ul>
                         <li><strong>Ruta Crítica Retenida:</strong> T016 (SIT), T017 (UAT), T018 (Defect triage), T019 (Checklist producción), T020 (Go-live rehearsal), T021 (Deployment).</li>
-                        <li><strong>Actividades Paralelas Paralizadas:</strong> T029 (Security penetration test - sin proveedor confirmado) y T030 (Training & enablement).</li>
+                        <li><strong>Actividades Paralelas Paralizadas:</strong> T029 (Security penetration test) y T030 (Training & enablement).</li>
                     </ul>
                 </div>
 
                 <!-- Fila 2 - Izquierda: Regla 4 -->
-                <div class="alert-box purple" style="margin: 0; width: 100%; box-sizing: border-box;">
+                <div class="alert-box purple">
                     <div class="alert-box-title">
-                        <span>Regla 4: Inconsistencia y Calidad de Datos en Tracker (1 Tarea)</span>
-                        <span class="badge badge-purple">Inconsistencia de Información</span>
+                        <span>Regla 4: Inconsistencia de Datos en Tracker</span>
+                        <span class="badge badge-purple">Calidad de Datos</span>
                     </div>
-                    <p><strong>Tarea T014 (Accessibility fixes):</strong> El registro muestra un estado de <code>"In Progress"</code> con un <code>% = 80%</code>, pero contiene una fecha de finalización <code>"Actual End" = 2026-09-14</code>. Esto requiere de validación de datos en la herramienta de seguimiento, ya que distorsiona los algoritmos de estimación.</p>
+                    <p><strong>Tarea T014 (Accessibility fixes):</strong> El registro muestra un estado de <code>"In Progress"</code> con un <code>% = 80%</code>, pero contiene una fecha de finalización <code>"Actual End" = 2026-09-14</code>. Esto requiere de validación de datos en la herramienta de seguimiento.</p>
                 </div>
 
                 <!-- Fila 2 - Derecha: Reglas 2 & 5 -->
-                <div class="alert-box warning" style="margin: 0; width: 100%; box-sizing: border-box;">
+                <div class="alert-box warning">
                     <div class="alert-box-title">
-                        <span>Reglas 2 y 5: Desviaciones Históricas (10) e Hitos Críticos Sin Iniciar (8)</span>
+                        <span>Reglas 2 y 5: Desviaciones Históricas e Hitos</span>
                         <span class="badge badge-orange">Riesgo Subyacente</span>
                     </div>
                     <p>Se evidencia un patrón sistemático de subestimación de tiempos desde el inicio del proyecto (10 tareas completadas/en curso superaron su plazo original). Asimismo, 8 tareas críticas de preparación para producción permanecen en 0% a solo 30 días de la fecha meta.</p>
@@ -711,7 +708,7 @@
 
             </div>
         </section>
-
+        
         <!-- SECCIÓN DE RECOMENDACIONES METODOLÓGICAS (DIFERENCIADAS) -->
         <section class="card">
             <div class="card-header">
